@@ -1,12 +1,11 @@
 // Mixins in here
 
-.btn-style(@w, @bg-color, @color){
+.btn-style(@w, @bg-color, @color, @f-size, @pad1, @pad2){
     width: @w;
     background-color: @bg-color;
     color: @color;
-    font-size: 2rem;
+    font-size: @f-size;
     border-radius: 15px;
     text-align: center;
-    padding: 4.5% 8%;
+    padding: @pad1 @pad2;
 }
-

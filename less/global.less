@@ -21,6 +21,10 @@ h1 {
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+
+  @media @mobile {
+    font-size: 2.9rem;
+  } // Ends @media @mobile
 }
 
 h4 {
@@ -32,6 +36,10 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+
+  @media @mobile {
+    font-size: 1.4rem;
+  } // Ends @media @mobile
 }
 
 img {
@@ -43,4 +51,8 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+    @media @mobile {
+      max-width: 91%;
+    } // Ends @media @mobile
 }
