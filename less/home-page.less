@@ -106,13 +106,34 @@ header {
       } // Ends @media @mobile
 
       .btn {
-        .btn-style(80%, @teal, white, 2rem, 4.5%, 8%);
+        .btn-style(80%, @eastern-blue, @white, 2rem, 4.5%, 8%);
+        // background: linear-gradient(-45deg, black, #17A2B8, coral, lightgreen);
+        // background-size: 200% 200%;
+        // animation: prettify 15s ease infinite;
 
         @media @mobile {
-          .btn-style(100%, @teal, white, 1.6rem, 3.5%, 8%);
+          .btn-style(100%, @eastern-blue, @white, 1.6rem, 3.5%, 8%);
           border-radius: 10px;
         } // Ends @media @mobile
       } // Ends .btn
     } // Ends .destination
   } // Ends .content-pick;
 }// home
+
+.btn {
+  background: linear-gradient(-45deg, black, #17A2B8, coral, lightgreen);
+  background-size: 200% 200%;
+  animation: prettify 15s ease infinite;
+}
+
+#btn-1 {
+  animation-delay: 5s;
+}
+
+#btn-2 {
+  animation-delay: 3s;
+}
+
+#btn-3 {
+  animation-delay: 1s;
+}

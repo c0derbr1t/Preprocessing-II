@@ -1,3 +1,14 @@
+@keyframes prettify {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,6 +153,7 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+  color: #212529;
 }
 h1 {
   font-size: 4rem;
@@ -173,6 +185,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+img:hover {
+  border: 3px dashed #C0C0C0;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -199,11 +214,19 @@ img {
   width: 45%;
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
   margin: 0 3%;
 }
 .nav-container .nav-bar a {
   text-decoration: none;
   color: #212529;
+}
+.nav-container .nav-bar a:hover {
+  padding: 1% 2%;
+  font-weight: bolder;
+  border-radius: 10px;
+  border-bottom: 2px dotted #17A2B8;
+  background-color: #ffffe6;
 }
 @media (max-width: 500px) {
   .nav-container {
@@ -332,7 +355,7 @@ header {
 .home .content-pick .destination .btn {
   width: 80%;
   background-color: #17A2B8;
-  color: white;
+  color: #FFFFFF;
   font-size: 2rem;
   border-radius: 15px;
   text-align: center;
@@ -342,11 +365,25 @@ header {
   .home .content-pick .destination .btn {
     width: 100%;
     background-color: #17A2B8;
-    color: white;
+    color: #FFFFFF;
     font-size: 1.6rem;
     border-radius: 15px;
     text-align: center;
     padding: 3.5% 8%;
     border-radius: 10px;
   }
+}
+.btn {
+  background: linear-gradient(-45deg, black, #17A2B8, coral, lightgreen);
+  background-size: 200% 200%;
+  animation: prettify 15s ease infinite;
+}
+#btn-1 {
+  animation-delay: 5s;
+}
+#btn-2 {
+  animation-delay: 3s;
+}
+#btn-3 {
+  animation-delay: 1s;
 }
