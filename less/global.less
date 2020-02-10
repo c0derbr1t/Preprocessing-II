@@ -12,6 +12,7 @@ html, body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
+  color: @shark;
 }
 
 h1 {
@@ -21,6 +22,10 @@ h1 {
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
+
+  @media @mobile {
+    font-size: 2.9rem;
+  } // Ends @media @mobile
 }
 
 h4 {
@@ -32,6 +37,10 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+
+  @media @mobile {
+    font-size: 1.4rem;
+  } // Ends @media @mobile
 }
 
 img {
@@ -39,8 +48,16 @@ img {
   height: auto;
 }
 
+img:hover {
+  border: 3px dashed @silver;
+}
+
 .container {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+
+    @media @mobile {
+      max-width: 91%;
+    } // Ends @media @mobile
 }
